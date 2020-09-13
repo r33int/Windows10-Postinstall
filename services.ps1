@@ -15,7 +15,6 @@ Set-Service RetailDemo -StartupType Disabled
 Set-Service diagnosticshub.standardcollector.service -StartupType Disabled
 Set-Service lfsvc -StartupType Disabled
 Set-Service AJRouter -StartupType Disabled
-Set-Service TabletInputService -StartupType Disabled
 Set-Service RemoteRegistry -StartupType Disabled
 Set-Service DusmSvc -StartupType Disabled
 Set-Service DiagTrack -StartupType Disabled
