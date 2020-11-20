@@ -2,7 +2,7 @@
 
 This repo contains a set of scripts & tools that I use to prepare my new Windows 10 installations. It improves performance, privacy, and makes the system cleaner overall.
 
-**main branch: Removes Cortana, Xbox services, OneDrive, Windows Defender, useless apps, and services.**
+**xbox branch: Removes Cortana, OneDrive, Windows Defender, useless apps, and services. Preserves Xbox features. Useful for people who use Microsoft Store games.**
 
 **Important:** I tried to include references and credits in my scripts as much as possible. I recommend you to read the explanations about the scripts & tools below, before running them, as it can cause unwanted effects on your system.
 I am not responsible for any damage caused to your system.
@@ -19,9 +19,8 @@ I am not responsible for any damage caused to your system.
 |removeApps.ps1|This script uninstalls "useless" UWP apps for the current user, to make the system as minimal as possible. Please make sure this script does not uninstall any app that you need before running it. <br>Note: Most apps can be manually reinstalled from the Microsoft Store.
 |removeOneDrive.ps1|This script completely removes OneDrive features from Windows. Do not run if you use OneDrive. <br>Credits: [https://github.com/Sycnex/Windows10Debloater](https://github.com/Sycnex/Windows10Debloater)
 |scheduledTasks.ps1|This script disables some default scheduled tasks, mostly tasks used for telemetry and data collection. Improves privacy.
-|services.ps1|This script disables "useless" Windows services. Services disabled are the following:<br><br>-   Windows Error Reporting<br>-   OneDrive sync Service<br>-   Program Compatibility Assistant (does not disable compatibility features, only the assistant.)<br>-   Messaging Services<br>-   Retail Demo<br>-   Diagnostics Hub Data Collector<br>-   Geolocation Services<br>-   AllJoyn Router Services<br>-   Remote Registry<br>-   Data Usage Monitor Service<br>-   Diagnostics Tracking Service<br>-   Downloaded Maps Manager<br><br> This script also disables all Xbox-related services.
+|services.ps1|This script disables "useless" Windows services. Services disabled are the following:<br><br>-   Windows Error Reporting<br>-   OneDrive sync Service<br>-   Program Compatibility Assistant (does not disable compatibility features, only the assistant.)<br>-   Messaging Services<br>-   Retail Demo<br>-   Diagnostics Hub Data Collector<br>-   Geolocation Services<br>-   AllJoyn Router Services<br>-   Remote Registry<br>-   Data Usage Monitor Service<br>-   Diagnostics Tracking Service<br>-   Downloaded Maps Manager<br>
 |ultimatePerformancePlan.ps1|This script enables the hidden "ultimate" performance plan. Enabling that can improve performance significantly. For reference: [https://www.howtogeek.com/368781/how-to-enable-ultimate-performance-power-plan-in-windows-10/](https://www.howtogeek.com/368781/how-to-enable-ultimate-performance-power-plan-in-windows-10/)
-|GameBarPresenceWriter|Removes a leftover Xbox Game Bar related program that appears whenever a game is running, and shouldn't be there. Reduces overhead. <br>For reference: [https://www.reddit.com/r/DestinyTechSupport/comments/amq3g1/i_think_i_found_the_root_cause_of_the_stuttering/](https://www.reddit.com/r/DestinyTechSupport/comments/amq3g1/i_think_i_found_the_root_cause_of_the_stuttering/)
 
 ## LGPO:
 LGPO is a tool that can import/export the local [group policy](https://en.wikipedia.org/wiki/Group_Policy) of Windows. I included my group policy in this repo as well. Here is a non-exhaustive list of the settings enforced in my group policy:

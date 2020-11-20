@@ -32,7 +32,4 @@ schtasks /Change /TN "\Microsoft\Windows\NetTrace\GatherNetworkInfo" /disable
 schtasks /Change /TN "\Microsoft\Windows\Maps\MapsUpdateTask" /disable
 schtasks /Change /TN "\Microsoft\Windows\Maps\MapsToastTask" /disable
 
-schtasks /Change /TN "Microsoft\XblGameSave\XblGameSaveTask" /disable
-schtasks /Change /TN "Microsoft\XblGameSave\XblGameSaveTaskLogon" /disable
-
 pause

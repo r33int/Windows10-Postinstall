@@ -7,14 +7,6 @@ if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
     exit;
 }
 
-# Xbox apps
-Get-AppxPackage -AllUsers *Microsoft.XboxIdentityProvider* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.XboxSpeechToTextOverlay* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.XboxGamingOverlay* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.XboxGameOverlay* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.XboxApp* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.Xbox.TCUI* | Remove-AppxPackage
-
 # Other unwanted apps
 Get-AppxPackage -AllUsers *Microsoft.BingWeather* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.GetHelp* | Remove-AppxPackage
