@@ -2,7 +2,7 @@
 
 This repo contains a set of scripts & tools that I use to prepare my new Windows 10 installations. It improves performance, privacy, and makes the system cleaner overall.
 
-**main branch: Removes Cortana, OneDrive, Windows Defender, useless apps, and services. Removes unnecessary Xbox features, but preserves minimal functionnality, such as authentication.**
+**xbox-minimal branch: Removes Cortana, OneDrive, Windows Defender, useless apps, and services. Removes unnecessary Xbox features, but preserves minimal functionnality, such as authentication.**
 
 **Important:** I tried to include references and credits in my scripts as much as possible. I recommend you to read the explanations about the scripts & tools below, before running them, as it can cause unwanted effects on your system.
 I am not responsible for any damage caused to your system.
