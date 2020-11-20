@@ -46,7 +46,6 @@ Get-AppxPackage -AllUsers *Microsoft.WindowsCamera* | Remove-AppxPackage
 
 Get-AppxPackage -AllUsers *Microsoft.OneConnect* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.Messaging* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.DesktopAppInstaller* | Remove-AppxPackage
 
 # Uninstalls cortana on Windows 10 build 2004+
 # Yes, you can fully remove her now!
