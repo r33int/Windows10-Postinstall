@@ -19,7 +19,6 @@ Get-AppxPackage -AllUsers *Microsoft.Xbox.TCUI* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.BingWeather* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.GetHelp* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.Getstarted* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.HEIFImageExtension* | Remove-AppxPackage
 
 Get-AppxPackage -AllUsers *Microsoft.Microsoft3DViewer* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.MicrosoftOfficeHub* | Remove-AppxPackage
@@ -29,11 +28,8 @@ Get-AppxPackage -AllUsers *Microsoft.MixedReality.Portal* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.MSPaint* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.Office.OneNote* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.People* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.VP9VideoExtensions* | Remove-AppxPackage
 
 Get-AppxPackage -AllUsers *Microsoft.Wallet* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.WebMediaExtensions* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.WebpImageExtension* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.WindowsFeedbackHub* | Remove-AppxPackage
 
 Get-AppxPackage -AllUsers *Microsoft.WindowsMaps* | Remove-AppxPackage
