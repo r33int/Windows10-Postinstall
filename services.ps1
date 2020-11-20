@@ -22,9 +22,6 @@ Set-Service MapsBroker -StartupType Disabled
 Set-Service RmSvc -StartupType Disabled
 
 # Xbox Services
-Set-Service XblAuthManager -StartupType Disabled
-Set-Service XblGameSave -StartupType Disabled
-Set-Service XboxNetApiSvc -StartupType Disabled
 Set-Service XboxGipSvc -StartupType Disabled
 
 pause
