@@ -1,0 +1,66 @@
+Nom d’ordinateur,Cible de stratégie,Sous-catégorie,GUID de sous-catégorie,Paramètre d’inclusion,Paramètre d’exclusion,Valeur de paramètre
+ENZO-DESKTOP,Système,Autres événements système,{0CCE9214-69AE-11D9-BED3-505054503030},Succès et échec,,3
+ENZO-DESKTOP,Système,Intégrité du système,{0CCE9212-69AE-11D9-BED3-505054503030},Succès et échec,,3
+ENZO-DESKTOP,Système,Extension système de sécurité,{0CCE9211-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Modification de l’état de la sécurité,{0CCE9210-69AE-11D9-BED3-505054503030},Réussite,,1
+ENZO-DESKTOP,Système,Pilote IPSEC,{0CCE9213-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Mode étendu IPsec,{0CCE921A-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Ouverture de session spéciale,{0CCE921B-69AE-11D9-BED3-505054503030},Réussite,,1
+ENZO-DESKTOP,Système,Mode rapide IPsec,{0CCE9219-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Serveur NPS,{0CCE9243-69AE-11D9-BED3-505054503030},Succès et échec,,3
+ENZO-DESKTOP,Système,Revendications utilisateur/de périphérique,{0CCE9247-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Appartenance à un groupe,{0CCE9249-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Mode principal IPsec,{0CCE9218-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Verrouillage du compte,{0CCE9217-69AE-11D9-BED3-505054503030},Réussite,,1
+ENZO-DESKTOP,Système,Fermer la session,{0CCE9216-69AE-11D9-BED3-505054503030},Réussite,,1
+ENZO-DESKTOP,Système,Autres événements d’ouverture/fermeture de session,{0CCE921C-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Ouvrir la session,{0CCE9215-69AE-11D9-BED3-505054503030},Succès et échec,,3
+ENZO-DESKTOP,Système,Partage de fichiers,{0CCE9224-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Registre,{0CCE921E-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Stratégie centralisée intermédiaire,{0CCE9246-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Stockage amovible,{0CCE9245-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Partage de fichiers détaillé,{0CCE9244-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Autres événements d’accès à l’objet,{0CCE9227-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Connexion de la plateforme de filtrage,{0CCE9226-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Rejet de paquet par la plateforme de filtrage,{0CCE9225-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Système de fichiers,{0CCE921D-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Manipulation de handle,{0CCE9223-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Généré par application,{0CCE9222-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Services de certification,{0CCE9221-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,SAM,{0CCE9220-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Objet de noyau,{0CCE921F-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Utilisation de privilèges non sensibles,{0CCE9229-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Utilisation de privilèges sensibles,{0CCE9228-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Autres événements d’utilisation de privilèges,{0CCE922A-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Fin du processus,{0CCE922C-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Événements RPC,{0CCE922E-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Activité DPAPI,{0CCE922D-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Création du processus,{0CCE922B-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Événements de jeton ajustés à droite,{0CCE924A-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Événements Plug-and-Play,{0CCE9248-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Modification de la stratégie d’authentification,{0CCE9230-69AE-11D9-BED3-505054503030},Réussite,,1
+ENZO-DESKTOP,Système,Modification de la stratégie d’autorisation,{0CCE9231-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Modification de la stratégie de niveau règle MPSSVC,{0CCE9232-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Autres événements de modification de stratégie,{0CCE9234-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Modification de la stratégie de plateforme de filtrage,{0CCE9233-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Modification de la stratégie d’audit,{0CCE922F-69AE-11D9-BED3-505054503030},Réussite,,1
+ENZO-DESKTOP,Système,Autres événements de gestion des comptes,{0CCE923A-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Gestion des groupes de distribution,{0CCE9238-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Gestion des groupes d’applications,{0CCE9239-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Gestion des groupes de sécurité,{0CCE9237-69AE-11D9-BED3-505054503030},Réussite,,1
+ENZO-DESKTOP,Système,Gestion des comptes d’utilisateur,{0CCE9235-69AE-11D9-BED3-505054503030},Réussite,,1
+ENZO-DESKTOP,Système,Gestion des comptes d’ordinateur,{0CCE9236-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Accès au service d’annuaire,{0CCE923B-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Modification du service d’annuaire,{0CCE923C-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Réplication du service d’annuaire,{0CCE923D-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Réplication du service d’annuaire détaillé,{0CCE923E-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Autres événements d’ouverture de session,{0CCE9241-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Opérations de ticket du service Kerberos,{0CCE9240-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Validation des informations d’identification,{0CCE923F-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,Système,Service d’authentification Kerberos,{0CCE9242-69AE-11D9-BED3-505054503030},Pas d’audit,,0
+ENZO-DESKTOP,,Option:CrashOnAuditFail,,Désactivé,,0
+ENZO-DESKTOP,,Option:FullPrivilegeAuditing,,Désactivé,,0
+ENZO-DESKTOP,,Option:AuditBaseObjects,,Désactivé,,0
+ENZO-DESKTOP,,Option:AuditBaseDirectories,,Désactivé,,0
+ENZO-DESKTOP,,FileGlobalSacl,,,,
+ENZO-DESKTOP,,RegistryGlobalSacl,,,,
