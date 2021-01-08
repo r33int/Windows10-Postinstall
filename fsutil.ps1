@@ -13,7 +13,10 @@ fsutil behavior set disablelastaccess 1
 fsutil behavior set mftzone 2
 
 $DriveLetters = (Get-WmiObject -Class Win32_Volume).DriveLetter
-    ForEach ($Drive in $DriveLetters) {
-    fsutil resource setavailable "$Drive":\
-    fsutil resource setlog shrink 10 "$Drive":\
+ForEach ($Drive in $DriveLetters){
+    If (-not ([string]::IsNullOrEmpty($Drive))){
+        Write-Host Optimizing "$Drive" Drive
+        fsutil resource setavailable "$Drive":\
+        fsutil resource setlog shrink 10 "$Drive":\
+    }
 }
