@@ -12,10 +12,11 @@ fsutil behavior set memoryusage 2
 fsutil behavior set disablelastaccess 1
 fsutil behavior set mftzone 2
 
-fsutil resource setavailable C:\
-fsutil resource setlog shrink 10 C:\
-
-fsutil resource setavailable D:\
-fsutil resource setlog shrink 10 D:\
-
-pause 
+$DriveLetters = (Get-WmiObject -Class Win32_Volume).DriveLetter
+ForEach ($Drive in $DriveLetters){
+    If (-not ([string]::IsNullOrEmpty($Drive))){
+        Write-Host Optimizing "$Drive" Drive
+        fsutil resource setavailable "$Drive":\
+        fsutil resource setlog shrink 10 "$Drive":\
+    }
+}
