@@ -20,8 +20,8 @@ Set-Itemproperty -path "HKU:\*\System\GameConfigStore" -Name "GameDVR_HonorUserF
 Remove-PSDrive -Name "HKU"
 
 # Disable Malware Removal Tool installation
-New-Item -Force -Path "HKLM:\SOFTWARE\Policies\Microsoft" -Name MRT
-Set-Itemproperty -path "HKLM:\SOFTWARE\Policies\Microsoft\MRT" -Name "DontOfferThroughWUAU" -Value 1
+# New-Item -Force -Path "HKLM:\SOFTWARE\Policies\Microsoft" -Name MRT
+# Set-Itemproperty -path "HKLM:\SOFTWARE\Policies\Microsoft\MRT" -Name "DontOfferThroughWUAU" -Value 1
 
 # Disable NetBIOS over TCP/IP service
 # This legacy service (< Win2k) is vulnerable and shouldn't be used anymore.
