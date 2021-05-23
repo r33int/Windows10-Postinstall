@@ -1,8 +1,10 @@
+This the same as [r33int](https://github.com/r33int/Windows10-Postinstall)'s , but i keep windows defender
+
 #  Windows10-Postinstall
 
 This repo contains a set of scripts & tools that I use to prepare my new Windows 10 installations. It improves performance, privacy, and makes the system cleaner overall.
 
-**main branch: Removes Cortana, Xbox services, OneDrive, Windows Defender, useless apps, and services.**
+**main branch: Removes Cortana, Xbox services, OneDrive, useless apps, and services.**
 
 **Important:** I tried to include references and credits in my scripts as much as possible. I recommend you to read the explanations about the scripts & tools below, before running them, as it can cause unwanted effects on your system.
 I am not responsible for any damage caused to your system.
@@ -15,7 +17,7 @@ I am not responsible for any damage caused to your system.
 |--|--|
 |contentDeliveryManager.ps1|This script completely prevents Windows 10 from automatically installing unwanted sponsored apps & games. <br>For reference: [https://blog.drhack.net/disable-windows-10-app-install-without-consent/](https://blog.drhack.net/disable-windows-10-app-install-without-consent/)|
 |fsutil.ps1|This script applies various tweaks for the NTFS filesystem using the fsutil command. <br>For reference: [https://notes.ponderworthy.com/fsutil-tweaks-for-ntfs-performance-and-reliability](https://notes.ponderworthy.com/fsutil-tweaks-for-ntfs-performance-and-reliability)|
-|registryTweaks.ps1|This script contains various tweaks that apply to Windows's registry. The tweaks are the following: <br><br>-   Set system clock to UTC, to prevent clock desyncs when multi-booting other systems such as Linux and macOS. This tweak does not cause any issue in the case of single-booting. <br><br>- Disable full-screen optimizations in games. This tweak allows games to use exclusive full-screen mode, thus can improve gaming performance and decrease latency. <br><br>-   Prevent Malware Removal Tool from automatically installing via Windows Update. That can be unsafe, but we are not using Windows Defender anyway. Only use if you are sure you do not need an antivirus. <br><br>-   Disable NetBIOS over TCP/IP. This service is legacy, vulnerable, and shouldn't be used anymore. Do not use if your computer belongs to your organization, and you are not sure. For reference: [https://geekflare.com/netbios-disable-windows/](https://geekflare.com/netbios-disable-windows/) <br><br>-   Disable web search in Windows Search.|
+|registryTweaks.ps1|This script contains various tweaks that apply to Windows's registry. The tweaks are the following: <br><br>-   Set system clock to UTC, to prevent clock desyncs when multi-booting other systems such as Linux and macOS. This tweak does not cause any issue in the case of single-booting. <br><br>- Disable full-screen optimizations in games. This tweak allows games to use exclusive full-screen mode, thus can improve gaming performance and decrease latency. <br><br>-   Disable NetBIOS over TCP/IP. This service is legacy, vulnerable, and shouldn't be used anymore. Do not use if your computer belongs to your organization, and you are not sure. For reference: [https://geekflare.com/netbios-disable-windows/](https://geekflare.com/netbios-disable-windows/) <br><br>-   Disable web search in Windows Search.|
 |removeApps.ps1|This script uninstalls "useless" UWP apps for the current user, to make the system as minimal as possible. Please make sure this script does not uninstall any app that you need before running it. <br>Note: Most apps can be manually reinstalled from the Microsoft Store.
 |removeOneDrive.ps1|This script completely removes OneDrive features from Windows. Do not run if you use OneDrive. <br>Credits: [https://github.com/Sycnex/Windows10Debloater](https://github.com/Sycnex/Windows10Debloater)
 |scheduledTasks.ps1|This script disables some default scheduled tasks, mostly tasks used for telemetry and data collection. Improves privacy.
