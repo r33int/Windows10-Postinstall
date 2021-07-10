@@ -19,6 +19,5 @@ Set-Service RemoteRegistry -StartupType Disabled
 Set-Service DusmSvc -StartupType Disabled
 Set-Service DiagTrack -StartupType Disabled
 Set-Service MapsBroker -StartupType Disabled
-Set-Service RmSvc -StartupType Disabled
 
 pause
