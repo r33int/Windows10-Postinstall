@@ -42,6 +42,9 @@ Get-AppxPackage -AllUsers *Microsoft.Messaging* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.BingNews* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.Todos* | Remove-AppxPackage
 
+Get-AppxPackage -AllUsers *MicrosoftTeams* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *Microsoft.PowerAutomateDesktop* | Remove-AppxPackage
+
 # Uninstalls cortana on Windows 10 build 2004+
 # Yes, you can fully remove her now!
 Get-AppxPackage -AllUsers *Microsoft.549981C3F5F10* | Remove-AppxPackage
