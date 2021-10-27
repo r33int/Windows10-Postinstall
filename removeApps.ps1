@@ -14,6 +14,7 @@ Get-AppxPackage -AllUsers *Microsoft.XboxGamingOverlay* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.XboxGameOverlay* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.XboxApp* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.Xbox.TCUI* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *Microsoft.GamingApp* | Remove-AppxPackage
 
 # Other unwanted apps
 Get-AppxPackage -AllUsers *Microsoft.BingWeather* | Remove-AppxPackage
@@ -46,6 +47,12 @@ Get-AppxPackage -AllUsers *Microsoft.WindowsCamera* | Remove-AppxPackage
 
 Get-AppxPackage -AllUsers *Microsoft.OneConnect* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.Messaging* | Remove-AppxPackage
+
+Get-AppxPackage -AllUsers *Microsoft.BingNews* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *Microsoft.Todos* | Remove-AppxPackage
+
+Get-AppxPackage -AllUsers *MicrosoftTeams* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *Microsoft.PowerAutomateDesktop* | Remove-AppxPackage
 
 # Uninstalls cortana on Windows 10 build 2004+
 # Yes, you can fully remove her now!
