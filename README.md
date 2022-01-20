@@ -27,11 +27,10 @@ I am not responsible for any damage caused to your system.
 ## LGPO:
 LGPO is a tool that can import/export the local [group policy](https://en.wikipedia.org/wiki/Group_Policy) of Windows. I included my group policy in this repo as well. Here is a non-exhaustive list of the settings enforced in my group policy:
 
--   Disable Windows Update auto-updates.
 -   Disable Windows Update automatic driver installation (I prefer installing drivers from the respective manufacturers' websites).
 -   Disable Windows Defender. That significantly improves performance and reduces overhead, but can reduce security, if you are not careful enough.
 -   Disable Geolocation Services.
--   Limit telemetry to the minimum level.
+-   Limit telemetry and data collection.
 -   Disable Windows Spotlight on the lock screen.
 
 Be aware my group policy can contain personal preferences that you may not want.
