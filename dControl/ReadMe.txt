@@ -1,6 +1,21 @@
 Author: BlueLife, Velociraptor
 www.sordum.org
 
+####################--Defender Control v2.1--####################
+
+Tuesday, March 1, 2022
+
+1. [Added] – Different blocking method
+2. [Added] – Some code improvements
+
+####################--Defender Control v2.0--####################
+
+Monday, 13 September 2021
+1. [Removed] – Cmd parameter support (Defender control is using inside some malware)
+2. [Fixed] – Defender Control Doesn't work on Windows 11 
+3. [Fixed] – Error occurs when turning off Windows Defender
+4. [Added] – Some code improvements
+
 ####################--Defender Control v1.9--####################
 
 Friday , 21. May 2021 , What is New
@@ -17,11 +32,11 @@ Wednesday, 21. april 2021 , What is New
 ####################--Defender Control v1.7--####################
 
 Monday, 25. january 2021 , What is New
-1. [FIXED] - Defender control doesn't work properly when Tamper Protection is active
-2. [FIXED] - ID Protection prevent to use Defender contol on multiple pc (ID Protection removed)
-3. [FIXED] - GUI Font is too small
-4. [ADDED] - The / q parameter has been added. Status information can be obtained with Exit code
-5. [ADDED] - Some code improvements
+1. [Fixed] - Defender control doesn't work properly when Tamper Protection is active
+2. [Fixed] - ID Protection prevent to use Defender contol on multiple pc (ID Protection removed)
+3. [Fixed] - GUI Font is too small
+4. [Added] - The / q parameter has been added. Status information can be obtained with Exit code
+5. [Added] - Some code improvements
 
 ####################--Defender Control v1.6--####################
 
