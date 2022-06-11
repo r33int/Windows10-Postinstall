@@ -20,10 +20,10 @@ Set-Service DusmSvc -StartupType Disabled
 Set-Service DiagTrack -StartupType Disabled
 Set-Service MapsBroker -StartupType Disabled
 
-# Xbox Services
-Set-Service XblAuthManager -StartupType Disabled
-Set-Service XblGameSave -StartupType Disabled
-Set-Service XboxNetApiSvc -StartupType Disabled
-Set-Service XboxGipSvc -StartupType Disabled
+# Xbox Services | Enable the feature by deleating the # symbol
+# Set-Service XblAuthManager -StartupType Disabled
+# Set-Service XblGameSave -StartupType Disabled
+# Set-Service XboxNetApiSvc -StartupType Disabled
+# Set-Service XboxGipSvc -StartupType Disabled
 
 pause
