@@ -26,6 +26,7 @@ Set-Itemproperty -path "HKLM:\SYSTEM\CurrentControlSet\Services\NetBT" -Name "St
 
 # Disable Web Search on Windows 10 2004+
 # https://winaero.com/disable-web-search-in-taskbar-in-windows-10-version-2004/
+New-Item -Path "HKCU:\SOFTWARE\Policies\Microsoft\Windows\Explorer"
 Set-Itemproperty -path "HKCU:\SOFTWARE\Policies\Microsoft\Windows\Explorer" -Name "DisableSearchBoxSuggestions" -Value 1
 
 pause
