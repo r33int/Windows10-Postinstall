@@ -8,7 +8,6 @@ if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 }
 
 # Xbox apps
-Get-AppxPackage -AllUsers *Microsoft.XboxIdentityProvider* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.XboxSpeechToTextOverlay* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.XboxGamingOverlay* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.XboxGameOverlay* | Remove-AppxPackage
@@ -46,7 +45,7 @@ Get-AppxPackage -AllUsers *microsoft.windowscommunicationsapps* | Remove-AppxPac
 Get-AppxPackage -AllUsers *Microsoft.WindowsCamera* | Remove-AppxPackage
 
 Get-AppxPackage -AllUsers *Microsoft.OneConnect* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.Messaging* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *Microsoft.Messaging* | Remove-ApspxPackage
 
 Get-AppxPackage -AllUsers *Microsoft.BingNews* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.Todos* | Remove-AppxPackage
@@ -57,6 +56,12 @@ Get-AppxPackage -AllUsers *Microsoft.PowerAutomateDesktop* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Clipchamp.Clipchamp* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *MicrosoftCorporationII.MicrosoftFamily* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *MicrosoftCorporationII.QuickAssist* | Remove-AppxPackage
+
+Get-AppxPackage -AllUsers *MSTeams* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *Microsoft.BingSearch* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *Microsoft.OutlookForWindows* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *Microsoft.Windows.DevHome* | Remove-AppxPackage
+
 
 # Uninstalls cortana on Windows 10 build 2004+
 # Yes, you can fully remove her now!
