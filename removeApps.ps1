@@ -45,7 +45,7 @@ Get-AppxPackage -AllUsers *microsoft.windowscommunicationsapps* | Remove-AppxPac
 Get-AppxPackage -AllUsers *Microsoft.WindowsCamera* | Remove-AppxPackage
 
 Get-AppxPackage -AllUsers *Microsoft.OneConnect* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.Messaging* | Remove-ApspxPackage
+Get-AppxPackage -AllUsers *Microsoft.Messaging* | Remove-AppxPackage
 
 Get-AppxPackage -AllUsers *Microsoft.BingNews* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *Microsoft.Todos* | Remove-AppxPackage
