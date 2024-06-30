@@ -57,6 +57,12 @@ Get-AppxPackage -AllUsers *Clipchamp.Clipchamp* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *MicrosoftCorporationII.MicrosoftFamily* | Remove-AppxPackage
 Get-AppxPackage -AllUsers *MicrosoftCorporationII.QuickAssist* | Remove-AppxPackage
 
+Get-AppxPackage -AllUsers *MSTeams* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *Microsoft.BingSearch* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *Microsoft.OutlookForWindows* | Remove-AppxPackage
+Get-AppxPackage -AllUsers *Microsoft.Windows.DevHome* | Remove-AppxPackage
+
+
 # Uninstalls cortana on Windows 10 build 2004+
 # Yes, you can fully remove her now!
 Get-AppxPackage -AllUsers *Microsoft.549981C3F5F10* | Remove-AppxPackage
