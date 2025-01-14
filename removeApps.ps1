@@ -7,57 +7,24 @@ if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
     exit;
 }
 
+# Path to the file containing the list of packages to uninstall
+$packageListFile = "packages.txt"
 
-# Other unwanted apps
-Get-AppxPackage -AllUsers *Microsoft.BingWeather* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.GetHelp* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.Getstarted* | Remove-AppxPackage
+# Ensure the package list file exists
+if (Test-Path $packageListFile) {
+    # Read each line (package name) from the file
+    $packages = Get-Content $packageListFile
+    
+    # Loop through each package and remove it
+    foreach ($package in $packages) {
+	# Remove AppxPackages
+	Get-AppxPackage -AllUsers $package | Remove-AppxPackage
+	# Remove AppxPackages for All Users
+        Get-AppxPackage -AllUsers $package | Remove-AppxPackage -AllUsers
+    }
+} else {
+    Write-Host "Package list file not found: $packageListFile"
+}
 
-Get-AppxPackage -AllUsers *Microsoft.Microsoft3DViewer* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.MicrosoftOfficeHub* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.MicrosoftSolitaireCollection* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.MixedReality.Portal* | Remove-AppxPackage
-
-Get-AppxPackage -AllUsers *Microsoft.MSPaint* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.Office.OneNote* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.People* | Remove-AppxPackage
-
-Get-AppxPackage -AllUsers *Microsoft.Wallet* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.WindowsFeedbackHub* | Remove-AppxPackage
-
-Get-AppxPackage -AllUsers *Microsoft.WindowsMaps* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.WindowsSoundRecorder* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.YourPhone* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.ZuneMusic* | Remove-AppxPackage
-
-Get-AppxPackage -AllUsers *Microsoft.ZuneVideo* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.SkypeApp* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.YourPhone* | Remove-AppxPackage
-
-Get-AppxPackage -AllUsers *microsoft.windowscommunicationsapps* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.WindowsCamera* | Remove-AppxPackage
-
-Get-AppxPackage -AllUsers *Microsoft.OneConnect* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.Messaging* | Remove-AppxPackage
-
-Get-AppxPackage -AllUsers *Microsoft.BingNews* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.Todos* | Remove-AppxPackage
-
-Get-AppxPackage -AllUsers *MicrosoftTeams* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.PowerAutomateDesktop* | Remove-AppxPackage
-
-Get-AppxPackage -AllUsers *Clipchamp.Clipchamp* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *MicrosoftCorporationII.MicrosoftFamily* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *MicrosoftCorporationII.QuickAssist* | Remove-AppxPackage
-
-Get-AppxPackage -AllUsers *MSTeams* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.BingSearch* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.OutlookForWindows* | Remove-AppxPackage
-Get-AppxPackage -AllUsers *Microsoft.Windows.DevHome* | Remove-AppxPackage
-
-
-# Uninstalls cortana on Windows 10 build 2004+
-# Yes, you can fully remove her now!
-Get-AppxPackage -AllUsers *Microsoft.549981C3F5F10* | Remove-AppxPackage
 
 pause
