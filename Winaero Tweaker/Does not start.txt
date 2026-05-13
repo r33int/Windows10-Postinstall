@@ -1,0 +1,36 @@
+On February 12, 2026, it came to my attention that Windows Defender (an integral part of Windows and the Windows Security app) started to flag the Winaero Tweaker app, showing a notification about a trojan contained within it. Although the flagging was a false positive, the situation worsened with subsequent signature updates. Defender began silently terminating Winaero Tweaker, leading users to believe something was wrong with the Tweaker itself. The affected version was 1.64.2.
+
+You can find some details here: https://winaero.com/winaero-tweaker-doesnt-start-or-flagged-by-defender-what-to-do/
+and here: https://winaero.com/defender-flags-winaero-tweaker-1-64-2-as-a-trojan/
+
+For the end user, the issue manifested as follows:
+
+* The user installs Winaero Tweaker – Windows Defender does not flag it.
+* The user tries to launch Winaero Tweaker – the app doesn't start because Windows Defender terminates its process without notifying the user.
+* When you open the Windows Security log for Defender, it shows a record indicating it terminated winaerotweaker.exe without providing the option to allow the app.
+* When you right-click the Winaero Tweaker installation directory and choose "Scan with Defender", it doesn't find any threat.
+* Finally, when you add Winaero Tweaker to Defender exclusions (by the winaerotweaker.exe path or by its installation folder), Defender ignores the exclusion and continues to terminate the app.
+
+=== WORKAROUND #1 ===
+
+1) Open Windows Security and go to Virus and Threat protection.
+2) Click on the Protection history under Current threats.
+3) With the Protection history open, launch Winaero Tweaker.
+4) Once you see the Threat found item with the down arrow chevron, expand it and click "Allow on device".
+
+Remember, you have just a couple of seconds for this. After that, the "Allow" option will disappear.
+
+=== WORKAROUND #2 ===
+
+1) Remove any exclusions you manually added as this fix will add duplicates. For that, in Windows Security, go to Virus and Threat protection > Virus and Threat protection settings, and click on Add or remove exclusions under Exclusions.
+Remove all entries related to Winaero Tweaker here.
+
+2) Run Powershell as Administrator. For that, type powershell right in the Start menu, and select "Run as Administrator" on the opposite side.
+
+3)Paste this into PowerShell:  Add-MpPreference -ExclusionPath "C:\Program Files\Winaero Tweaker". Correct the app path if you have installed it to a non-default location, and press Enter to execute the command.
+
+4) Then paste: Add-MpPreference -ExclusionProcess "C:\Program Files\Winaero Tweaker\WinaeroTweaker.exe". Replace the file path with Winaero Tweaker’s exe file path if needed, and press Enter.
+
+5) Finally, open Windows Security and check Defender’s exclusions list. You should see WT being excluded as a PROCESS and folder instead of a file and folder. Defender wasn’t excluding it as a process so this fix changes that.
+
+When you click Winaero Tweaker shortcut, it should now open like normal.
